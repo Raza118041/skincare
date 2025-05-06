@@ -51,7 +51,7 @@ const dropdownLinks = [
                                 <Link 
                                     key={index} 
                                     href={link.path}
-                                    className="block px-4 py-2 hover:underline underline-offset-4"
+                                    className="block px-4 py-1 hover:underline underline-offset-4"
                                 >
                                     {link.name}
                                 </Link>
