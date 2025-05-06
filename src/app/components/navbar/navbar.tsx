@@ -10,7 +10,6 @@ const Navbar = () => {
         { name: "Home", path: "/" },
         { name: "Our story", path: "/ourstory" },
         { name: "Pages", path: "/" },
-
     ]
     return (
         <div className='w-full bg-white flex justify-between items-center p-7'>
