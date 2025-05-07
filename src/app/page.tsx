@@ -1,4 +1,5 @@
 import BeautyGuide from "./components/BeautyGuide/beautyguide";
+import CTA from "./components/CTA Section/cta";
 import HeroSection from "./components/HeroSection/herosection";
 import Service from "./components/Services/service";
 import Transformation from "./components/Transformation/transformation";
@@ -12,6 +13,7 @@ export default function Home() {
       </div>
       <Service />
       <Transformation />
+      <CTA />
     </div>
   );
 }
