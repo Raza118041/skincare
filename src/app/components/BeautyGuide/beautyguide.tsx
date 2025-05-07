@@ -59,7 +59,7 @@ const BeautyGuide = () => {
                     </Button>
                 </div>
             </div>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 md:py-20 gap-[30px] max-md:overflow-scroll'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 pt-10 md:pt-20 gap-[30px] max-md:overflow-scroll'>
                 {skincare.map((item, index) => (
                     <div
                         key={index}
