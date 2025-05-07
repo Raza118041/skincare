@@ -14,16 +14,16 @@ const Navbar = () => {
         { name: "Our story", path: "/ourstory" }
     ]
 
-const dropdownLinks = [
-    {name: "About", path: "/about"},
-    {name: "Service Detail", path: "/servicedetail"},
-    {name: "Contact", path: "/contact"},
+    const dropdownLinks = [
+        { name: "About", path: "/about" },
+        { name: "Service Detail", path: "/servicedetail" },
+        { name: "Contact", path: "/contact" },
 
-]
+    ]
 
 
     return (
-        <div className='w-full bg-white flex justify-between items-center p-7'>
+        <div className='w-full flex justify-between items-center p-7'>
             <div>
                 <Image
                     src={G}
@@ -36,7 +36,7 @@ const dropdownLinks = [
                 {navLinks.map((link, index) => (
                     <Link key={index} href={link.path}>{link.name}</Link>
                 ))}
-                <div 
+                <div
                     className="relative"
                     onMouseEnter={() => setDropdown(true)}
                     onMouseLeave={() => setDropdown(false)}
@@ -46,10 +46,10 @@ const dropdownLinks = [
                         <ChevronDown size={16} />
                     </div>
                     {dropdown && (
-                        <div className="absolute top-full left-0 bg-white shadow-md rounded-md py-2 w-40 z-10">
+                        <div className="absolute top-full left-0 bg-white shadow-md rounded-md py-2 z-10 w-40">
                             {dropdownLinks.map((link, index) => (
-                                <Link 
-                                    key={index} 
+                                <Link
+                                    key={index}
                                     href={link.path}
                                     className="block px-4 py-1 hover:underline underline-offset-4"
                                 >

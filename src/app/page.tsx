@@ -1,9 +1,9 @@
-import Image from "next/image";
+import HeroSection from "./components/heroSection/herosection";
 
 export default function Home() {
   return (
     <div>
-      Welcome to skin care site
+      <HeroSection />
     </div>
   );
 }
