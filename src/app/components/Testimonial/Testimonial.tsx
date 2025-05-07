@@ -97,7 +97,7 @@ const Testimonial = () => {
 
                 </div>
                 <h1
-                    className='text-[#FF835A] items-center text-sm flex gap-1 underline underline-offset-4'
+                    className='text-[#FF835A] cursor-pointer items-center text-sm flex gap-1 underline underline-offset-4'
                 >
                     View all certification
                     <svg
