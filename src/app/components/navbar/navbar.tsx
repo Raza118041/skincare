@@ -67,7 +67,7 @@ const Navbar = () => {
                     width={20}
                     height={20}
                 />
-                <span>+(123) 456-7890</span>
+                <span>+92 301 1339381</span>
             </div>
         </div>
     )
