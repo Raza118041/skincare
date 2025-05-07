@@ -5,7 +5,10 @@ import { H1, P } from '@/components/ui/Typography'
 import { Button } from '@/components/ui/button'
 import Ingredients from "../../../../public/Images/ingredients.svg"
 import Sustainable from "../../../../public/Images/sustainable.svg"
+import Ingredientss from "../../../../public/Images/pexels-cinematicamp-15297111.jpg"
 import Approved from "../../../../public/Images/approved.svg"
+import SustainBeauty from "../../../../public/Images/pexels-karolina-grabowska-4889038.jpg"
+import Dermatologist from "../../../../public/Images/pexels-shvetsa-5069611.jpg"
 
 const BeautyGuide = () => {
     const skincare = [
@@ -14,7 +17,20 @@ const BeautyGuide = () => {
         { image: Approved, title: "Dermatologist-approved", subTitle: "Each formula is rigorously tested for purity and efficacy, so you can trust what goes on your skin." },
     ]
 
-    const bgColors = ["bg-[#FFEFD7]", "bg-[#FEE0D9]", "bg-[#FCF3EE]"]
+    const bgImages = [
+        {
+            image: Ingredientss,
+            overlay: "bg-black/10"
+        },
+        {
+            image: SustainBeauty,
+            overlay: "bg-black/10"
+        },
+        {
+            image: Dermatologist,
+            overlay: "bg-black/10"
+        }
+    ]
     return (
         <div className=''>
             <div className='flex justify-center items-center flex-col gap-5'>
@@ -43,13 +59,23 @@ const BeautyGuide = () => {
                     </Button>
                 </div>
             </div>
-            <div className='flex flex-row justify-center items-center py-10 md:py-20 gap-[30px] max-md:overflow-scroll'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10 md:py-20 gap-[30px] max-md:overflow-scroll'>
                 {skincare.map((item, index) => (
                     <div
                         key={index}
-                        className={`flex flex-col justify-center h-150 md:h-[539px] md:w-[380px] rounded-full  ${bgColors[index % bgColors.length]}`}
+                        className={`flex relative flex-col justify-center py-20 rounded-full  ${bgImages[index % bgImages.length]}`}
                     >
-                        <div className='flex flex-col justify-center items-center px-4 gap-5'>
+                        <div className="absolute inset-0 w-full h-full">
+                            <Image
+                                src={bgImages[index].image}
+                                alt="Background"
+                                layout="fill"
+                                objectFit="cover"
+                                className="z-0 blur-lg"
+                            />
+                            <div className={`absolute inset-0 ${bgImages[index].overlay} z-10`}></div>
+                        </div>
+                        <div className='flex flex-col justify-center items-center px-4 gap-5 z-20'>
                             <Image
                                 src={item.image}
                                 alt=''
