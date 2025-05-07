@@ -8,7 +8,7 @@ import React from 'react'
 const CTA = () => {
     return (
         <div className='w-full flex justify-center mb-10 items-center'>
-            <div className='flex flex-col lg:flex-row justify-between  items-center py-10 lg:py-10 mx-10 px-32 gap-5 lg:gap-20 bg-[#F4EAE2] rounded-full'>
+            <div className='flex flex-col lg:flex-row justify-between  items-center py-10 lg:py-10 mx-10 px-26 md:px-32 gap-5 lg:gap-20 bg-[#F4EAE2] rounded-full'>
                 <div className='flex flex-col'>
                     <H1>Ready for radiant skin?</H1>
                     <P>Book your personalized skincare session today and discover your natural glow.</P>
