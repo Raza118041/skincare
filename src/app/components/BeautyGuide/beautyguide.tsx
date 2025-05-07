@@ -71,7 +71,7 @@ const BeautyGuide = () => {
                                 alt="Background"
                                 layout="fill"
                                 objectFit="cover"
-                                className="z-0 blur-lg"
+                                className="z-0 blur-2xl"
                             />
                             <div className={`absolute inset-0 ${bgImages[index].overlay} z-10`}></div>
                         </div>
