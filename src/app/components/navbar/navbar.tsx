@@ -9,8 +9,8 @@ import { ChevronDown } from 'lucide-react'
 const Navbar = () => {
     const [dropdown, setDropdown] = useState(false)
     const navLinks = [
-        { name: "Shop", path: "/shop" },
         { name: "Home", path: "/" },
+        { name: "Shop", path: "/shop" },
         { name: "Our story", path: "/ourstory" }
     ]
 
