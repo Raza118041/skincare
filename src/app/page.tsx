@@ -1,6 +1,7 @@
 import BeautyGuide from "./components/BeautyGuide/beautyguide";
 import HeroSection from "./components/HeroSection/herosection";
 import Service from "./components/Services/service";
+import Transformation from "./components/Transformation/transformation";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <BeautyGuide />
       </div>
       <Service />
+      <Transformation />
     </div>
   );
 }

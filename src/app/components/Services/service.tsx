@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import bgImage from "../../../../public/Images/flower.svg"
 import img1 from "../../../../public/Images/SliderImage3.png"
 import img2 from "../../../../public/Images/SliderImage1.png"
 import img3 from "../../../../public/Images/SliderImage2.png"
