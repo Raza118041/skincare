@@ -74,7 +74,7 @@ const Navbar = () => {
                     width={20}
                     height={20}
                 />
-                <P>+1 212 555 4567</P>
+                <P className='cursor-pointer'>+1 212 555 4567</P>
             </div>
             <div className='md:hidden'>
                 <button onClick={toggleMobileMenu} className='p-2'>
