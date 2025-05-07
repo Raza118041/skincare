@@ -5,6 +5,7 @@ import G from "../../../../public/Images/G.svg"
 import phone from "../../../../public/Images/phone.svg"
 import Link from 'next/link'
 import { ChevronDown } from 'lucide-react'
+import { P } from '@/components/ui/Typography'
 
 const Navbar = () => {
     const [dropdown, setDropdown] = useState(false)
@@ -23,7 +24,7 @@ const Navbar = () => {
 
 
     return (
-        <div className='w-full flex justify-between items-center p-7'>
+        <div className='w-full sticky top-0 left-0 flex justify-between items-center p-7 z-50 backdrop-blur-sm bg-white/70'>
             <div>
                 <Image
                     src={G}
@@ -67,7 +68,7 @@ const Navbar = () => {
                     width={20}
                     height={20}
                 />
-                <span>+92 301 1339381</span>
+                <P>+1 212 555 4567</P>
             </div>
         </div>
     )
