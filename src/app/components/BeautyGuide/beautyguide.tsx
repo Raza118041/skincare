@@ -16,14 +16,14 @@ const BeautyGuide = () => {
 
     const bgColors = ["bg-[#FFEFD7]", "bg-[#FEE0D9]", "bg-[#FCF3EE]"]
     return (
-        <div className='pt-20 pb-20'>
+        <div className=''>
             <div className='flex justify-center items-center flex-col gap-5'>
                 <Image src={Stars} alt='stars' className='' width={60} height={60} />
                 <H1>The ultimate guide to radiant beauty</H1>
-                <P className='text-center w-96'>At Skinn Care, we believe that healthy skin starts with pure, effective ingredients. Our journey began with a simple mission</P>
-                <div className='w-40'>
+                <P className='text-center md:w-96'>At Skinn Care, we believe that healthy skin starts with pure, effective ingredients. Our journey began with a simple mission</P>
+                <div className=''>
                     <Button
-                        className="px-12 bg-[#FF835A] text-[#512729] py-5 rounded-none rounded-tr-xl hover:bg-[#FF835A] cursor-pointer flex items-center gap-2"
+                        className="bg-[#FF835A] px-6 py-3 w-full text-[#512729] rounded-none rounded-tr-xl hover:bg-[#FF835A] cursor-pointer flex items-center gap-2"
                     >
                         Learn more
                         <svg
@@ -43,19 +43,19 @@ const BeautyGuide = () => {
                     </Button>
                 </div>
             </div>
-            <div className='flex flex-row justify-center items-center pt-20 pb-20 px-8 gap-[30px]'>
+            <div className='flex flex-row justify-center items-center py-10 md:py-20 gap-[30px] max-md:overflow-scroll'>
                 {skincare.map((item, index) => (
                     <div
                         key={index}
-                        className={`flex flex-col justify-center h-[539px] w-[380px] rounded-full  ${bgColors[index % bgColors.length]}`}
+                        className={`flex flex-col justify-center h-150 md:h-[539px] md:w-[380px] rounded-full  ${bgColors[index % bgColors.length]}`}
                     >
                         <div className='flex flex-col justify-center items-center px-4 gap-5'>
                             <Image
                                 src={item.image}
                                 alt=''
-                                className='w-14 h-14 object-contain rounded-md'
+                                className='w-10 h-10 md:w-14 md:h-14 object-contain rounded-md'
                             />
-                            <H1>{item.title}</H1>
+                            <H1 className='text-center'>{item.title}</H1>
                             <P className='text-center'>{item.subTitle}</P>
                         </div>
                     </div>

@@ -7,7 +7,7 @@ interface Props {
 
 const H1: React.FC<Props> = ({className, children}) => {
     return (
-      <h1 className={`scroll-m-20 text-[#512729] text-2xl font-extrabold tracking-tight ${className}`}>
+      <h1 className={`scroll-m-20 text-[#512729] text-xl md:text-2xl font-extrabold tracking-tight ${className}`}>
         {children}
       </h1>
     )
@@ -41,7 +41,7 @@ const H1: React.FC<Props> = ({className, children}) => {
 
   const P: React.FC<Props> = ({className, children}) => {
     return (
-      <p className={`leading-7 text-[16px] ${className}`}>
+      <p className={`leading-7 text-sm md:text-[16px] ${className}`}>
        {children}
       </p>
     )

@@ -3,9 +3,11 @@ import HeroSection from "./components/HeroSection/herosection";
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
       <HeroSection />
-      <BeautyGuide />
+      <div className="py-10 px-6 md:py-20">
+        <BeautyGuide />
+      </div>
     </div>
   );
 }

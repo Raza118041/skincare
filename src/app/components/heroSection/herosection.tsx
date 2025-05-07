@@ -18,14 +18,14 @@ const HeroSection = () => {
                 <source src="/videos/4008327-uhd_4096_2160_25fps.mp4" type="video/mp4" />
             </video>
             <div className="relative z-10 flex justify-between h-full">
-                <div className="flex flex-col justify-center p-20 text-white bg-black/20 w-full backdrop-blur-sm">
-                    <H1 className='text-[#FF835A]/80 mb-3 text-4xl'>Glow naturally with skin care</H1>
+                <div className="flex flex-col justify-center px-10 py-20 md:px-20 md:py-20 text-white bg-black/20 w-full backdrop-blur-sm">
+                    <H1 className='text-[#FF835A]/80 mb-4 md:mb-7 md:text-4xl'>Glow naturally with skin care</H1>
                     <P className="w-full">Our skincare line is crafted with pure,</P>
-                    <P className="mb-6">high-quality ingredients for visible results.</P>
+                    <P className="mb-3 md:mb-6">high-quality ingredients for visible results.</P>
                     <div className="w-auto">
                         <Link href={"https://calendly.com/"} target='_blank'>
                             <Button
-                                className="px-8 group bg-[#FF835A] text-[#512729] py-6 rounded-none rounded-tr-xl hover:bg-[#FF835A] hover:text-white cursor-pointer flex items-center gap-2"
+                                className="px-4 md:px-8 group bg-[#FF835A] text-[#512729] py-6 rounded-none rounded-tr-xl hover:bg-[#FF835A] hover:text-white cursor-pointer flex items-center gap-2"
                             >
                                 <Image
                                     src={phone}
