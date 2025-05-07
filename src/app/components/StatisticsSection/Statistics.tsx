@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useEffect } from 'react'
-import { H1, P } from '@/components/ui/Typography'
+import { P } from '@/components/ui/Typography'
 import { animate, useMotionValue, useTransform, motion } from 'framer-motion'
 
 const Statistics = () => {

@@ -1,6 +1,5 @@
 import { H1, P } from '@/components/ui/Typography'
 import React from 'react'
-import ImageSlider from "../../../../public/Images/SlideImage.png"
 import img1 from "../../../../public/Images/before.png"
 import img2 from "../../../../public/Images/after.png"
 import Image from "next/image"

@@ -20,7 +20,7 @@ const Service = () => {
         <div className='bg-[#512729] flex md:flex-row flex-col p-16 gap-10 md:gap-32 justify-center w-full'>
             <div className='flex flex-col gap-5 md:gap-10 w-full md:w-1/2 justify-center'>
                 <H1 className='text-[#FF835A] md:text-5xl'>Our Skin Care Services</H1>
-                <P className='text-white'>Whether you're new to skincare or a seasoned pro, our services are here to help you achieve your healthiest skin. Explore our tailored offerings below.</P>
+                <P className='text-white'>Whether you&apos;re new to skincare or a seasoned pro, our services are here to help you achieve your healthiest skin. Explore our tailored offerings below.</P>
                 <Link href={"https://calendly.com/"} target='_blank'>
                     <Button
                         className="px-4 md:px-8 group bg-white text-[#512729] py-6 rounded-none rounded-tr-xl hover:bg-[#FF835A] hover:text-white cursor-pointer flex items-center gap-2"
