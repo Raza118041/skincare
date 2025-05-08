@@ -246,7 +246,7 @@ const Sponsors = () => {
                                 </FormItem>
                             )}
                         />
-                        <Button type="submit" className="cursor-pointer px-16 py-5">Submit</Button>
+                        <Button type="submit" className="cursor-pointer px-16 py-5 bg-[#FF835A] hover:bg-[#FF835A]">Submit</Button>
                     </form>
                 </Form>
             </div>
