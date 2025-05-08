@@ -19,7 +19,7 @@ const Articles = () => {
           {articlesArray.map((item, index) => (
             <div 
               key={index} 
-              className='flex flex-col w-full h-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden'
+              className='flex flex-col w-full h-full bg-white rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden'
             >
               <div className="relative w-full h-0 pb-[70%]">
                 <Image
