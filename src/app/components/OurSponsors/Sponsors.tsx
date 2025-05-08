@@ -70,7 +70,7 @@ const Sponsors = () => {
         },
     })
 
-    function onSubmit(values: z.infer<typeof formSchema>) {
+    function onSubmit() {
        toast.success("Your form has been successfully submitted. We will get back to you shortly.")
     }
 

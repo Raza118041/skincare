@@ -5,7 +5,6 @@ import { buttonVariants } from "@/components/ui/button"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { cn } from "@/lib/utils"
-import { ChevronLeft, ChevronRight } from "lucide-react"
 import { DayPicker, DropdownProps as OriginalDropdownProps } from "react-day-picker"
 
 export type CalendarProps = React.ComponentProps<typeof DayPicker>
@@ -44,7 +43,7 @@ function Calendar({ className, classNames, showOutsideDays = true, ...props }: C
         ...classNames,
       }}
       components={{
-        Dropdown: ({ value, onChange, children, ...props }: OriginalDropdownProps & { children?: React.ReactNode }) => {
+        Dropdown: ({ value, onChange, children }: OriginalDropdownProps & { children?: React.ReactNode }) => {
           const options = React.Children.toArray(children) as React.ReactElement<React.HTMLProps<HTMLOptionElement>>[]
           const selected = options.find((child) => child.props.value === value)
           const handleChange = (value: string) => {
