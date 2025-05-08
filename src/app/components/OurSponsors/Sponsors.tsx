@@ -97,7 +97,7 @@ const Sponsors = () => {
         <div className='flex flex-col md:flex-row py-16'>
             <div className="w-full md:w-1/2 p-5 md:p-8">
                 <H1 className='mb-4'>Our Sponsors</H1>
-                <div className="md:min-h-screen flex flex-col justify-between">
+                <div className="md:h-screen flex flex-col justify-between">
                     <div className='grid grid-cols-3 '>
                         {
                             CompanyLogos.map((item, index) => (
