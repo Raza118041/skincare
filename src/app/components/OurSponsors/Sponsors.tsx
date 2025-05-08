@@ -36,6 +36,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select"
+import { toast } from "sonner"
 
 dayjs.extend(customParseFormat);
 
@@ -70,7 +71,7 @@ const Sponsors = () => {
     })
 
     function onSubmit(values: z.infer<typeof formSchema>) {
-        console.log(values)
+       toast.success("Your form has been successfully submitted. We will get back to you shortly.")
     }
 
     const CompanyLogos = [
@@ -172,7 +173,7 @@ const Sponsors = () => {
                                 <FormItem>
                                     <FormLabel className="text-[#512729]">Email</FormLabel>
                                     <FormControl>
-                                        <Input placeholder="Enter email" {...field} className="border-[1.4px] border-[#512729] solid focus:outline-none focus:ring-0" />
+                                        <Input placeholder="Enter your email" {...field} className="border-[1.4px] border-[#512729] solid focus:outline-none focus:ring-0" />
                                     </FormControl>
                                     <FormMessage />
                                 </FormItem>
@@ -212,7 +213,6 @@ const Sponsors = () => {
                                 </FormItem>
                             )}
                         />
-
 
                         <FormField
                             control={form.control}

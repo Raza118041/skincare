@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar/navbar";
+import { Toaster } from 'sonner';
 
 const sora = Sora({
   subsets: ["latin"],
@@ -25,6 +26,7 @@ export default function RootLayout({
         className={`${sora.variable}`}
       >
         <Navbar />
+        <Toaster />
         {children}
       </body>
     </html>
