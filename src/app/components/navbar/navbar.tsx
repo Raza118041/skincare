@@ -74,7 +74,9 @@ const Navbar = () => {
                     width={20}
                     height={20}
                 />
-                <P className='cursor-pointer'>+1 212 555 4567</P>
+                <a href="tel:+923011339381" className="cursor-pointer">
+                    <P>+92 301 1339381</P>
+                </a>
             </div>
             <div className='md:hidden'>
                 <button onClick={toggleMobileMenu} className='p-2'>
@@ -83,52 +85,54 @@ const Navbar = () => {
             </div>
             {isOpen && (
                 <>
-                <div className='md:hidden fixed  overflow-y-hidden inset-0 h-[calc(100vh-72px)] top-[72px] bg-white p-5'>
-                    <div className='flex flex-col gap-5'>
-                        {navLinks.map((link, index) => (
-                            <Link
-                                key={index}
-                                href={link.path}
-                                className='text-lg hover:text-[#FF835A] transition'
-                                onClick={() => setIsOpen(false)}
-                            >
-                                {link.name}
-                            </Link>
-                        ))}
-                        <div className='relative'>
-                            <div
-                                className="flex items-center gap-1 cursor-pointer text-lg"
-                                onClick={() => setDropdown(!dropdown)}
-                            >
-                                <span>Pages</span>
-                                <ChevronDown size={16} className={dropdown ? 'rotate-180 transition' : 'transition'} />
-                            </div>
-                            {dropdown && (
-                                <div className="pl-4 mt-2 flex flex-col gap-2">
-                                    {dropdownLinks.map((link, index) => (
-                                        <Link
-                                            key={index}
-                                            href={link.path}
-                                            className="hover:text-[#FF835A] transition"
-                                            onClick={() => setIsOpen(false)}
-                                        >
-                                            {link.name}
-                                        </Link>
-                                    ))}
+                    <div className='md:hidden fixed  overflow-y-hidden inset-0 h-[calc(100vh-72px)] top-[72px] bg-white p-5'>
+                        <div className='flex flex-col gap-5'>
+                            {navLinks.map((link, index) => (
+                                <Link
+                                    key={index}
+                                    href={link.path}
+                                    className='text-lg hover:text-[#FF835A] transition'
+                                    onClick={() => setIsOpen(false)}
+                                >
+                                    {link.name}
+                                </Link>
+                            ))}
+                            <div className='relative'>
+                                <div
+                                    className="flex items-center gap-1 cursor-pointer text-lg"
+                                    onClick={() => setDropdown(!dropdown)}
+                                >
+                                    <span>Pages</span>
+                                    <ChevronDown size={16} className={dropdown ? 'rotate-180 transition' : 'transition'} />
                                 </div>
-                            )}
-                        </div>
-                        <div className='flex items-center gap-2 mt-4 pt-4 border-t'>
-                            <Image
-                                src={phone}
-                                alt='phone'
-                                width={20}
-                                height={20}
-                            />
-                            <P>+1 212 555 4567</P>
+                                {dropdown && (
+                                    <div className="pl-4 mt-2 flex flex-col gap-2">
+                                        {dropdownLinks.map((link, index) => (
+                                            <Link
+                                                key={index}
+                                                href={link.path}
+                                                className="hover:text-[#FF835A] transition"
+                                                onClick={() => setIsOpen(false)}
+                                            >
+                                                {link.name}
+                                            </Link>
+                                        ))}
+                                    </div>
+                                )}
+                            </div>
+                            <div className='flex items-center gap-2 mt-4 pt-4 border-t'>
+                                <Image
+                                    src={phone}
+                                    alt='phone'
+                                    width={20}
+                                    height={20}
+                                />
+                                <a href="tel:+923011339381" className="cursor-pointer">
+                                    <P>+92 301 1339381</P>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
                 </>
             )}
         </div>
