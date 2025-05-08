@@ -1,6 +1,7 @@
 import BeautyGuide from "./components/BeautyGuide/beautyguide";
 import CTA from "./components/CTASection/cta";
 import HeroSection from "./components/heroSection/herosection";
+import Sponsors from "./components/OurSponsors/Sponsors";
 import Service from "./components/Services/service";
 import Statistics from "./components/StatisticsSection/Statistics";
 import Testimonial from "./components/Testimonial/Testimonial";
@@ -18,6 +19,7 @@ export default function Home() {
       <CTA />
       <Statistics />
       <Testimonial />
+      <Sponsors />
     </div>
   );
 }
