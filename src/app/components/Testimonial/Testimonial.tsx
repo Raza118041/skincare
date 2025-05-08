@@ -107,8 +107,8 @@ const Testimonial = () => {
                         fill="none"
                         stroke="currentColor"
                         strokeWidth="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         className="lucide lucide-arrow-right-icon lucide-arrow-right">
                         <path d="M5 12h14" />
                         <path d="m12 5 7 7-7 7" />
