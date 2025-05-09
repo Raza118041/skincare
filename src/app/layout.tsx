@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/app/components/Navbar/navbar";
 import { Toaster } from 'sonner';
 import Footer from "@/app/components/Footer/footer";
+import Navbar from "./components/Navbar/navbar";
 
 const sora = Sora({
   subsets: ["latin"],
