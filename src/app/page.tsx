@@ -2,7 +2,7 @@ import Articles from "./components/ArticlesSection/articles";
 import BeautyGuide from "./components/BeautyGuide/beautyguide";
 import CTA from "./components/CTASection/cta";
 import Gallery from "./components/GallerySection/gallery";
-import HeroSection from "./components/heroSection/herosection";
+import HeroSection from "./components/HeroSection/herosection";
 import Sponsors from "./components/OurSponsors/Sponsors";
 import Service from "./components/Services/service";
 import Statistics from "./components/StatisticsSection/Statistics";

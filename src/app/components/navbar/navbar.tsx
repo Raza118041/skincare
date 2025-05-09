@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 import React, { useState } from 'react'
-import G from "../../../../public/Images/G.svg"
+import logo from "../../../../public/Images/G.svg"
 import phone from "../../../../public/Images/phone.svg"
 import Link from 'next/link'
 import { ChevronDown, Menu, X } from 'lucide-react'
@@ -30,13 +30,13 @@ const Navbar = () => {
 
     return (
         <div className='w-full sticky top-0 left-0 flex justify-between items-center p-4 md:p-7 z-50 md:backdrop-blur-lg md:bg-white/70 bg-white'>
-            <div>
+            <div className='text-[#FF835A]'>
                 <Image
-                    src={G}
+                    src={logo}
                     alt='logo'
                     width={100}
                     height={100}
-                    className=''
+                    className='fill-current'
                 />
             </div>
             <div className='hidden md:flex gap-5'>
@@ -75,7 +75,7 @@ const Navbar = () => {
                     height={20}
                 />
                 <a href="tel:+923011339381" className="cursor-pointer">
-                    <P>+92 301 1339381</P>
+                    <P>+(123) 456-7890</P>
                 </a>
             </div>
             <div className='md:hidden'>
@@ -128,7 +128,7 @@ const Navbar = () => {
                                     height={20}
                                 />
                                 <a href="tel:+923011339381" className="cursor-pointer">
-                                    <P>+92 301 1339381</P>
+                                    <P>+(123) 456-7890</P>
                                 </a>
                             </div>
                         </div>
