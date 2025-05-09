@@ -3,7 +3,7 @@ import { Sora } from "next/font/google";
 import "./globals.css";
 import { Toaster } from 'sonner';
 import Footer from "@/app/components/Footer/footer";
-import Navbar from "./components/Navbar/navbar";
+import Navbar from "@/app/components/Navbar/navbar";
 
 const sora = Sora({
   subsets: ["latin"],
