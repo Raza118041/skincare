@@ -1,6 +1,7 @@
 import Articles from "./components/ArticlesSection/articles";
 import BeautyGuide from "./components/BeautyGuide/beautyguide";
 import CTA from "./components/CTASection/cta";
+import Gallery from "./components/GallerySection/gallery";
 import HeroSection from "./components/heroSection/herosection";
 import Sponsors from "./components/OurSponsors/Sponsors";
 import Service from "./components/Services/service";
@@ -22,6 +23,7 @@ export default function Home() {
       <Testimonial />
       <Sponsors />
       <Articles />
+      <Gallery />
     </div>
   );
 }
