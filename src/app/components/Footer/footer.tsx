@@ -16,8 +16,20 @@ import { P } from '@/components/ui/Typography'
 import { FaInstagram, FaFacebookF, FaTwitter, FaPinterestP } from 'react-icons/fa';
 
 
+interface FooterLink {
+    name: string;
+    path: string;
+    icon?: any;
+}
+
+interface FooterSection {
+    title: string;
+    links: FooterLink[];
+}
+
+
 const Footer = () => {
-    const footerLinks = [
+    const footerLinks: FooterSection[] = [
         {
             title: "Pages",
             links: [
