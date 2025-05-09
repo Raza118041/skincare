@@ -1,10 +1,20 @@
+"use client"
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import logo from "../../../../public/Images/footerLogo.svg"
 import phone from "../../../../public/Images/phone-1.svg"
-import { H1, P } from '@/components/ui/Typography'
+import phoneIcon from "../../../../public/Images/phone-icon.svg"
+import emailIcon from "../../../../public/Images/email-icon.svg"
+import locationIcon from "../../../../public/Images/location-icon.svg"
+import instagramIcon from "../../../../public/Images/instagram-icon.svg"
+import facebookIcon from "../../../../public/Images/facebook-icon.svg"
+import twitterIcon from "../../../../public/Images/twitter-icon.svg"
+import pinterestIcon from "../../../../public/Images/pinterest-icon.svg"
+import { P } from '@/components/ui/Typography'
+import { FaInstagram, FaFacebookF, FaTwitter, FaPinterestP } from 'react-icons/fa';
+
 
 const Footer = () => {
     const footerLinks = [
@@ -32,29 +42,29 @@ const Footer = () => {
         {
             title: "Services",
             links: [
-                { name: "Custom facials", path: "/customfacials" },
-                { name: "Anti-aging treatments", path: "/anti-angingtreatments" },
-                { name: "Acne solutions", path: "/acnesolutions" },
-                { name: "Hyderation therapy", path: "/hyderationtherapy" },
-                { name: "Skin resurfacing", path: "/skinresurfaing" },
-                { name: "Specialty treatments", path: "/specialtytreatments" },
+                { name: "Custom facials", path: "#" },
+                { name: "Anti-aging treatments", path: "#" },
+                { name: "Acne solutions", path: "#" },
+                { name: "Hyderation therapy", path: "#" },
+                { name: "Skin resurfacing", path: "#" },
+                { name: "Specialty treatments", path: "#" },
             ]
         },
         {
             title: "Socials",
             links: [
-                { icon: "", name: "Instagram", path: "https://www.instagram.com/" },
-                { icon: "", name: "Facebook", path: "https://web.facebook.com/?_rdc=1&_rdr#" },
-                { icon: "", name: "Twitter", path: "https://x.com/" },
-                { icon: "", name: "Printerest", path: "https://www.pinterest.com/" },
+                { icon: instagramIcon, name: "Instagram", path: "https://www.instagram.com/" },
+                { icon: facebookIcon, name: "Facebook", path: "https://web.facebook.com/?_rdc=1&_rdr#" },
+                { icon: twitterIcon, name: "Twitter", path: "https://x.com/" },
+                { icon: pinterestIcon, name: "Printerest", path: "https://www.pinterest.com/" },
             ]
         },
         {
             title: "Contact us",
             links: [
-                { icon: "", name: "(123) 456-7890", path: "tel:+923011339381" },
-                { icon: "", name: "info@example.com", path: "mailto:aliraza118041@gmail.com" },
-                { icon: "", name: "123 Skincare Street, Wellness City, NY 10001", path: "#" },
+                { icon: phoneIcon, name: "(123) 456-7890", path: "tel:+923011339381" },
+                { icon: emailIcon, name: "info@example.com", path: "mailto:aliraza118041@gmail.com" },
+                { icon: locationIcon, name: "123 Skincare Street, Wellness City, NY 10001", path: "#" },
             ]
         },
     ]
@@ -91,15 +101,21 @@ const Footer = () => {
                 </div>
             </div>
             <div className='bg-[#572B2C] px-5 md:px-16 py-10'>
-                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10 md:gap-24'>
+                <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10 md:gap-4'>
                     {footerLinks.map((section, index) => (
                         <div key={index} className=''>
                             <span className='text-white font-extrabold'>{section.title || '\u00A0'}</span>
                             {
                                 section.links.map((link, index) => (
-                                    <div className='' key={index}>
-                                        {(link as any).icon && (
-                                            <Image src={(link as any).icon} alt={link.name} width={16} height={16} />
+                                    <div className='flex flex-row items-center gap-1 truncate' key={index}>
+                                        {link.icon && (
+                                            <Image
+                                                src={link.icon}
+                                                alt={`${link.name} icon`}
+                                                width={16}
+                                                height={16}
+                                                className='text-white'
+                                            />
                                         )}
                                         <Link href={link.path} className='text-white font-light hover:underline underline-offset-4'>{link.name}</Link>
                                     </div>
