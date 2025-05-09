@@ -7,7 +7,7 @@ import Service from "../app/components/Services/service";
 import Statistics from "../app/components/StatisticsSection/Statistics";
 import Testimonial from "../app/components/Testimonial/Testimonial";
 import Transformation from "../app/components/Transformation/transformation";
-import HeroSection from "./components/HeroSection/herosection";
+import HeroSection from "./components/HeroSection/HeroSection";
 
 export default function Home() {
   return (
