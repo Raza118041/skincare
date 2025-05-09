@@ -33,7 +33,7 @@ const Statistics = () => {
                 <P>Years providing expert skincare solutions</P>
             </div>
             <div className='flex flex-col justify-center items-center text-center'>
-                <div className='flex flex-row gap-1 font-bold'><Counter to={20000} />+</div>
+                <div className='flex flex-row gap-1 font-bold '><Counter to={20000} />+</div>
                 <P>Transformative treatments completed with care.</P>
             </div>
         </div>
