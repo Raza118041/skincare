@@ -1,6 +1,6 @@
 "use client"
 import { Button } from '@/components/ui/button'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import logo from "../../../../public/Images/footerLogo.svg"
@@ -13,13 +13,12 @@ import facebookIcon from "../../../../public/Images/facebook-icon.svg"
 import twitterIcon from "../../../../public/Images/twitter-icon.svg"
 import pinterestIcon from "../../../../public/Images/pinterest-icon.svg"
 import { P } from '@/components/ui/Typography'
-import { FaInstagram, FaFacebookF, FaTwitter, FaPinterestP } from 'react-icons/fa';
 
 
 interface FooterLink {
     name: string;
     path: string;
-    icon?: any;
+    icon?: StaticImageData;
 }
 
 interface FooterSection {
